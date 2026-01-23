@@ -1,8 +1,10 @@
 <header>
-    <nav class="bg-black shadow text-white">
-        <div>{{ title() }}</div>
-        <div>
-        Current Temp: {{ weather() }}
+    <nav class="bg-black shadow text-white mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+            <div>{{ title() }}</div>
+            <div class="topnav-right">
+                Current Temp: {{ weather() }}
+            </div>
         </div>
     </nav>
 </header>

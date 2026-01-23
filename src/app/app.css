@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+app-sidebar,
+app-home {
+  flex: 1;
+}
