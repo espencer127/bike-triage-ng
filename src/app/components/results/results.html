@@ -1,0 +1,18 @@
+@if (this.sharedDataService.getValue() ) {
+    <div>
+        Issues:
+    </div>
+}
+@for (area of areas; track area) {
+<ul>
+  @for (issue of area.possibleIssues; track issue) {
+    @if (issue.checked) {
+        <div>
+            <li class="checkbox-item">
+                {{issue.name}}
+            </li>
+        </div>
+    }
+  }
+</ul>
+}
