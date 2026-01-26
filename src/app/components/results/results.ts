@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { App } from '../../app';
 import { SharedDataService } from '../../sharedDataService';
+import { Printbutton } from "../printbutton/printbutton";
 
 @Component({
   selector: 'app-results',
-  imports: [],
+  imports: [Printbutton],
   templateUrl: './results.html',
   styleUrl: './results.css',
 })
