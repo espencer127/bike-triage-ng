@@ -2,9 +2,25 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  padding-top: 80px;
 }
 
-app-sidebar,
+app-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: black;
+  color: white;
+}
+
+app-sidebar {
+  position: fixed;
+	width: 200px;
+	height:100%;
+}
+
 app-home {
   flex: 1;
+  padding-left: 210px;
 }

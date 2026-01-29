@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, forwardRef } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { App } from '../../app';
 import { Results } from "../results/results";
@@ -6,7 +6,7 @@ import { SharedDataService } from '../../sharedDataService';
 
 @Component({
   selector: 'app-home',
-  imports: [FormsModule, Results],
+  imports: [forwardRef(() => FormsModule), forwardRef(() => Results)],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

@@ -20,4 +20,11 @@ describe('Header', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render title', async () => {
+    const fixture = TestBed.createComponent(Header);
+    await fixture.whenStable();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('header nav div div')?.textContent).toContain('bike-triage-ng');
+  });
 });
