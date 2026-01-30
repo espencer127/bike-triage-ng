@@ -2,7 +2,7 @@ import { Component, forwardRef } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { App } from '../../app';
 import { Results } from "../results/results";
-import { SharedDataService } from '../../sharedDataService';
+import { SharedDataService } from '../../services/shared-data-service';
 
 @Component({
   selector: 'app-home',

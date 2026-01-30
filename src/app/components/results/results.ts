@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { App } from '../../app';
-import { SharedDataService } from '../../sharedDataService';
+import { SharedDataService } from '../../services/shared-data-service';
 import { Printbutton } from "../printbutton/printbutton";
 
 @Component({

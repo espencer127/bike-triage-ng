@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { ControllerService } from '../../controller';
+import { ControllerService } from '../../services/controller-service';
 
 @Component({
   selector: 'app-header',

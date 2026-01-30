@@ -1,0 +1,48 @@
+{ 
+    "weatherResponse": {
+        "coord": {
+            "lon": -80.01,
+            "lat": 40.44
+        },
+        "weather": [
+            {
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }
+        ],
+        "base": "stations",
+        "main": {
+            "temp": 18.73,
+            "feels_like": -1.48,
+            "temp_min": 7.12,
+            "temp_max": 9.91,
+            "pressure": 1031,
+            "humidity": 73,
+            "sea_level": 1031,
+            "grnd_level": 988
+        },
+        "visibility": 10000,
+        "wind": {
+            "speed": 5.99,
+            "deg": 236,
+            "gust": 8.99
+        },
+        "clouds": {
+            "all": 0
+        },
+        "dt": 1769786358,
+        "sys": {
+            "type": 2,
+            "id": 2097369,
+            "country": "US",
+            "sunrise": 1769776279,
+            "sunset": 1769812512
+        },
+        "timezone": -18000,
+        "id": 5206379,
+        "name": "Pittsburgh",
+        "cod": 200
+    }
+}

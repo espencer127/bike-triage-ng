@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SharedDataService {
   private dataSignal: boolean = false;
@@ -13,5 +13,4 @@ export class SharedDataService {
   public setValue(input: boolean) {
     this.dataSignal = input;
   }
-
 }
