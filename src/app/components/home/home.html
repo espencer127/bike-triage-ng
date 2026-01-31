@@ -4,8 +4,10 @@
     <ul>
       @for (issue of area.possibleIssues; track issue) {
         <li class="checkbox-item">
-          <input type="checkbox" [(ngModel)]="issue.checked" (change)="onCheckboxChange($event)" [id]="'checkbox-' + issue.name">
-          <span class="input-label">{{issue.name}}</span>
+          <label [for]="'checkbox-' + issue.name">
+            <input type="checkbox" [(ngModel)]="issue.checked" (change)="onCheckboxChange($event)" [id]="'checkbox-' + issue.name" [name]="'checkbox-' + issue.name">
+            <span class="input-label">{{issue.name}}</span>
+          </label>
         </li>
       }
     </ul>

@@ -8,8 +8,6 @@ import { NgxPrintDirective } from 'ngx-print';
   styleUrl: './printbutton.css',
 })
 export class Printbutton {
-onClick() {
-throw new Error('Method not implemented.');
-}
+
 
 }
