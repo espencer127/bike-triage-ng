@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { ControllerService } from '../../services/controller-service';
 
 @Component({
@@ -7,9 +7,11 @@ import { ControllerService } from '../../services/controller-service';
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
-export class Header {
+export class Header implements OnInit {
 
-  constructor(private controllerService: ControllerService) {}
+  constructor(private controllerService: ControllerService) {
+    this.controllerService = controllerService;
+  }
 
   ngOnInit() {
     this.controllerService.getWeather().subscribe({
