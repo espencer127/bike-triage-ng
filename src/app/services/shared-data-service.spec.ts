@@ -18,5 +18,10 @@ describe('SharedDataService', () => {
     expect(service.getValue()).toBe(false);
   });
 
+  it('getValue should be true after setting', () => {
+    service.setValue(true);
+    expect(service.getValue()).toBe(true);
+  });
+
 
 });

@@ -20,7 +20,7 @@ app-sidebar {
 	height:100%;
 }
 
-app-home {
+.main {
   flex: 1;
   padding-left: 210px;
 }

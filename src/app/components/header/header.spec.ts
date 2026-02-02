@@ -3,6 +3,7 @@ import { Header } from './header';
 import { ControllerService } from '../../services/controller-service';
 import { weatherResponse } from '../../../resources/test/weatherResponse.json';
 import { Observable, of } from 'rxjs';
+import { provideRouter } from '@angular/router';
 
 class MockControllerService {
   getWeather() {
@@ -19,6 +20,7 @@ describe('Header', () => {
     await TestBed.configureTestingModule({
       imports: [Header],
       providers: [
+        provideRouter([]),
         {provide: ControllerService, useClass: MockControllerService}
       ]
     })

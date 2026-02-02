@@ -2,6 +2,8 @@
     <nav class="bg-black shadow text-white mx-auto px-4">
         <div class="flex items-center justify-between h-20">
             <div>{{ title() }}</div>
+            <div><a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Checklist</a></div>
+            <div><a routerLink="/results" routerLinkActive="active-link">Results</a></div>
             <div class="topnav-right">
                 Current Temp: {{ weather() }}
             </div>
